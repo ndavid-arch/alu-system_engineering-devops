@@ -12,10 +12,10 @@ sudo systemctl start nginx
 
 # Replace default server config to include redirect
 
-sudo sed -i '/server_name _;/a 
-location /redirect_me {\n
-return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\
-}\n' /etc/nginx/sites-available/default
+sed -i '/server_name _;/a\
+    location /redirect_me {\
+        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\
+    }' /etc/nginx/sites-available/default
 
 # Restart nginx to apply changes
 
