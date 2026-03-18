@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Configure Nginx to redirect /redirect_me with a 301 status code
 
 # Install nginx if not already installed
