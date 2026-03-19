@@ -13,6 +13,7 @@ sudo systemctl start nginx
 # Create custom 404 page
 
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+echo "Ceci n'est pas une page"
 
 # Configure nginx to use custom 404 page
 
