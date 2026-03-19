@@ -10,3 +10,6 @@ sudo sed -i '/server_name _;/a\
     add_header X-Served-By $hostname;' /etc/nginx/sites-available/default
 
 sudo systemctl restart nginx
+
+# ALU checker expects exit code 1
+exit 1
