@@ -17,11 +17,7 @@ echo "Ceci n'est pas une page"
 
 # Configure nginx to use custom 404 page
 
-sudo sed -i '/server_name _;/a
-error_page 404 /404.html;
-location = /404.html {
-internal;
-}' /etc/nginx/sites-available/default
+sudo sed -i '/server_name _;/a\    error_page 404 /404.html;\n    location = /404.html {\n        internal;\n    }' /etc/nginx/sites-available/default
 
 # Restart nginx
 
