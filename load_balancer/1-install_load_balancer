@@ -3,7 +3,7 @@
 
 # Update package list and install HAProxy
 sudo apt update -y
-sudo apt install -y haproxy
+sudo apt install -y haproxy -y
 
 # Ensure HAProxy service is enabled
 sudo systemctl enable haproxy
