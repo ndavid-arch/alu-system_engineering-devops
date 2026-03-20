@@ -1,7 +1,17 @@
+# Set default policy to deny all incoming connections
 sudo ufw default deny incoming
-sudo ufw default allow outgoing
+
+# Allow SSH
 sudo ufw allow 22/tcp
+
+# Allow HTTP
 sudo ufw allow 80/tcp
+
+# Allow HTTPS
 sudo ufw allow 443/tcp
+
+# Enable the firewall
 sudo ufw enable
+
+# Verify rules
 sudo ufw status verbose
